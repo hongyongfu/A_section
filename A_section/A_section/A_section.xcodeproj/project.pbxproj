@@ -16,6 +16,7 @@
 		98C8DD5F226DA51A008135AD /* A_sectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8DD5E226DA51A008135AD /* A_sectionTests.m */; };
 		98C8DD6A226DA51A008135AD /* A_sectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8DD69226DA51A008135AD /* A_sectionUITests.m */; };
 		98C8DD79226DA554008135AD /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C8DD78226DA554008135AD /* AViewController.m */; };
+		A3F32412C485801207AD1A14 /* libPods-A_section.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D4CDD4CADDB5FF8C2ACF9 /* libPods-A_section.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9407F544E88422719A72C06E /* Pods-A_section.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A_section.release.xcconfig"; path = "Target Support Files/Pods-A_section/Pods-A_section.release.xcconfig"; sourceTree = "<group>"; };
 		98C8DD42226DA519008135AD /* A_section.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A_section.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C8DD45226DA519008135AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98C8DD46226DA519008135AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		98C8DD6B226DA51A008135AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98C8DD77226DA554008135AD /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		98C8DD78226DA554008135AD /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		9F1D4CDD4CADDB5FF8C2ACF9 /* libPods-A_section.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-A_section.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA75B1C6A8ABF825D0C5026 /* Pods-A_section.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A_section.debug.xcconfig"; path = "Target Support Files/Pods-A_section/Pods-A_section.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F32412C485801207AD1A14 /* libPods-A_section.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				98C8DD5D226DA51A008135AD /* A_sectionTests */,
 				98C8DD68226DA51A008135AD /* A_sectionUITests */,
 				98C8DD43226DA519008135AD /* Products */,
+				DBF4B2FB5095D2BDF2C4BB60 /* Pods */,
+				CB5C6E52E0DFB0895C254586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,24 @@
 			path = A_sectionUITests;
 			sourceTree = "<group>";
 		};
+		CB5C6E52E0DFB0895C254586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1D4CDD4CADDB5FF8C2ACF9 /* libPods-A_section.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBF4B2FB5095D2BDF2C4BB60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA75B1C6A8ABF825D0C5026 /* Pods-A_section.debug.xcconfig */,
+				9407F544E88422719A72C06E /* Pods-A_section.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98C8DD6E226DA51A008135AD /* Build configuration list for PBXNativeTarget "A_section" */;
 			buildPhases = (
+				D8B09450536DBDA61929482C /* [CP] Check Pods Manifest.lock */,
 				98C8DD3E226DA519008135AD /* Sources */,
 				98C8DD3F226DA519008135AD /* Frameworks */,
 				98C8DD40226DA519008135AD /* Resources */,
@@ -261,6 +287,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8B09450536DBDA61929482C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A_section-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98C8DD3E226DA519008135AD /* Sources */ = {
@@ -437,6 +488,7 @@
 		};
 		98C8DD6F226DA51A008135AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA75B1C6A8ABF825D0C5026 /* Pods-A_section.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +506,7 @@
 		};
 		98C8DD70226DA51A008135AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9407F544E88422719A72C06E /* Pods-A_section.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
